@@ -1,6 +1,6 @@
 % Project: Hands-Free Intraoral Electrolarynx
 % Module: Signal and Tone Generator 
-% Description: The signalGenerator function is intended to produce an 
+% Description: The SignalGenerator function is intended to produce an 
 % impulse train signal according to a given pitch value. As for example: 
 % 120Hz for men, 200Hz for women, and 300Hz for children).
 % Author: Sujeily P. Fonseca-Gonzalez
@@ -16,7 +16,7 @@
 % the end, the output signal is also stored in a .wav file.               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function impulse_train = signalGenerator(pitch)
+function impulse_train = SignalGenerator(pitch)
 
     %---------------------------------------------------------------------%
     %                         DEFINING VARIABLES                          %

@@ -1,9 +1,10 @@
 % Project: Hands-Free Intraoral Electrolarynx
 % Module: Signal and Tone Generator 
-% Description: This script is intended to test the signalGenerator
-% function with three frequency values (120Hz for men, 200Hz for 
-% women, and 300Hz for children). These frecuency values correspond to the
-% pitch options available in the Hands-Free Intraoral Electrolarynx.
+% Description: The SignalGenerator_Test script is intended to test the 
+% SignalGenerator function with three frequency values (120Hz for men, 
+% 200Hz for women, and 300Hz for children). These frecuency values 
+% correspond to the pitch options available in the Hands-Free Intraoral 
+% Electrolarynx.
 % Author: Sujeily P. Fonseca-Gonzalez
 
 clear all % Clear variables and functions 
