@@ -2,11 +2,12 @@
 # Module: Signal and Tone Generator
 # Description: This script was developed to test the ToneGenerator script.
 # Author: Sujeily P. Fonseca-Gonzalez
+# Username: Sujeily-Fonseca
 
 import time
 from ToneGenerator import toneGenerator
 
-# Calling the ToneGenerator function with the different possible input. The ToneGenerator script shall be called
+# Calling the ToneGenerator function with the different possible inputs. The ToneGenerator script shall be called
 # from the Control Module of the Hands-Free Intraoral Electrolarynx.
 
 # Test No 1: 120Hz
