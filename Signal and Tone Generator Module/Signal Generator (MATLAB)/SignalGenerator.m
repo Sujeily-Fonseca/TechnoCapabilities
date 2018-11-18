@@ -4,7 +4,6 @@
 % impulse train signal according to a given pitch value. As for example: 
 % 120Hz for men, 200Hz for women, and 300Hz for children).
 % Author: Sujeily P. Fonseca-Gonzalez
-% Username: Sujeily-Fonseca
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                   FORMAT FOR INPUT/OUTPUT VARIABLES                     %
