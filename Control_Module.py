@@ -58,16 +58,16 @@ def changePitch():
     global pitch_tracker
     if pitch_tracker == 0:
         GPIO.output(25, GPIO.LOW)                       # Turn off the blue led 
-        GPIO.output(8,GPIO.HIGH)                        # Turn on the red led 
+        GPIO.output(7,GPIO.HIGH)                        # Turn on the red led 
         pitch_tracker +=1                               # Change the pitch pointer
 
     elif pitch_tracker == 1:
-        GPIO.output(8, GPIO.LOW)                        # Turn off the red led
-        GPIO.output(7, GPIO.HIGH)                       # Turn on the yellow led
+        GPIO.output(7, GPIO.LOW)                        # Turn off the red led
+        GPIO.output(8, GPIO.HIGH)                       # Turn on the yellow led
         pitch_tracker += 1                              # Change the pitch pointer
         
     else:
-        GPIO.output(7, GPIO.LOW)                        # Turn off the yellow pointer
+        GPIO.output(8, GPIO.LOW)                        # Turn off the yellow pointer
         GPIO.output(25, GPIO.HIGH)                      # Turn on the blue led
         pitch_tracker = 0                               # Change the pitch pointer
 
@@ -81,8 +81,8 @@ GPIO.setup(15, GPIO.IN)                                  # Signal Activation/Dea
 GPIO.setup(23, GPIO.IN)                                  # Pitch Button assigned to GPIO 22
 GPIO.setup(12, GPIO.OUT, initial=GPIO.HIGH)              # On/Off led indicator
 GPIO.setup(25, GPIO.OUT, initial=GPIO.HIGH)              # 120Hz led indicator - Low pitch
-GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW)                # 200Hz led indicator - Medium pitch
-GPIO.setup(7, GPIO.OUT, initial=GPIO.LOW)                # 300Hz led indicator - High pitch
+GPIO.setup(7, GPIO.OUT, initial=GPIO.LOW)                # 200Hz led indicator - Medium pitch
+GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW)                # 300Hz led indicator - High pitch
 
 # Callback assignments for GPIO 10, 4, 15, and 22.3
 GPIO.add_event_detect(10, GPIO.FALLING, callback = downHandler, bouncetime = 250)   # Volume down button
