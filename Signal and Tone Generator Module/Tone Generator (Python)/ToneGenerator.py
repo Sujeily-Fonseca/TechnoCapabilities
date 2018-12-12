@@ -45,7 +45,9 @@ def loadSoundBuffer(pitch):
 def increaseVolume():
     global sawtooth                                                # Get access to the global variable
     if sawtooth.get_volume() < 1.0:                                # Get the current playback volume 
-        sawtooth.set_volume(round(sawtooth.get_volume(), 1) + 0.2) # Increase 20% the playback volume 
+        sawtooth.set_volume(round(sawtooth.get_volume(), 1) + 0.2) # Increase 20% the playback volume
+    else:
+        sawtooth.set_volume(1.0)                                    # Set volume to 100%
 
 # DECREASE VOLUME
 # This function is destined to decrease the playback volume of the generated sawtooth signal.
@@ -54,3 +56,5 @@ def decreaseVolume():
     global sawtooth                                                # Get access to the global variable
     if sawtooth.get_volume() > 0.0:                                # Get the current playback volume
         sawtooth.set_volume(round(sawtooth.get_volume(), 1) - 0.2) # Decrease 20% the playback volume
+    else:
+        sawtooth.set_volume(0.0)                                    # Set volume to 0%
